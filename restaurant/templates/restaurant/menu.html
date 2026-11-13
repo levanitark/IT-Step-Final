@@ -1,0 +1,73 @@
+{% extends "restaurant/base.html" %}
+
+{% block title %}Menu{% endblock %}
+{% block menu_active %}active{% endblock %}
+
+{% block content %}
+  <h1>Menu</h1>
+
+  <div class="categories">
+    <a href="{{ all_url }}" class="category {% if selected_category is None %}active{% endif %}">All</a>
+    {% for category in categories %}
+      <a href="{{ category.url }}" class="category {% if category.id == selected_category %}active{% endif %}">{{ category.name }}</a>
+    {% endfor %}
+  </div>
+
+  <form method="get" class="filters" onchange="this.submit()">
+    {% if selected_category is not None %}
+      <input type="hidden" name="category" value="{{ selected_category }}">
+    {% endif %}
+
+    <label>
+      Min spiciness:
+      <select name="min_spiciness">
+        {% for level in spiciness_levels %}
+          <option value="{{ level }}" {% if level == min_spiciness %}selected{% endif %}>{{ level }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label>
+      Max spiciness:
+      <select name="max_spiciness">
+        {% for level in spiciness_levels %}
+          <option value="{{ level }}" {% if level == max_spiciness %}selected{% endif %}>{{ level }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label><input type="checkbox" name="no_nuts" {% if no_nuts %}checked{% endif %}> No nuts</label>
+    <label><input type="checkbox" name="vegetarian" {% if vegetarian %}checked{% endif %}> Vegetarian only</label>
+
+    <a href="{% url 'menu' %}" class="btn btn-light">Reset</a>
+  </form>
+
+  {% if error %}
+    <p>{{ error }}</p>
+  {% else %}
+    <div class="products">
+      {% for product in products %}
+        <div class="card">
+          <img src="{{ product.image }}" alt="{{ product.name }}">
+          <div class="card-body">
+            <h3>{{ product.name }}</h3>
+            <p>Spiciness: {% if product.spiciness == 0 %}Not spicy{% else %}{{ product.spiciness }} / 4{% endif %}</p>
+            <p>Nuts: {{ product.nuts|yesno:"Yes,No" }}</p>
+            <p>Vegetarian: {{ product.vegeterian|yesno:"Yes,No" }}</p>
+            <div class="card-footer">
+              <span class="price">${{ product.price|floatformat:2 }}</span>
+              <form method="post" action="{% url 'add_to_basket' %}">
+                {% csrf_token %}
+                <input type="hidden" name="product_id" value="{{ product.id }}">
+                <input type="hidden" name="next" value="{{ request.get_full_path }}">
+                <button type="submit" class="btn">Add to basket</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      {% empty %}
+        <p>No dishes match your filters.</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endblock %}

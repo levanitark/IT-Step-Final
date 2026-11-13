@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step Ordering - {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'restaurant/style.css' %}">
+</head>
+<body>
+  <header class="header">
+    <a href="{% url 'menu' %}" class="logo">Step Ordering</a>
+    <nav>
+      <a href="{% url 'menu' %}" class="{% block menu_active %}{% endblock %}">Menu</a>
+      <a href="{% url 'basket' %}" class="{% block basket_active %}{% endblock %}">Basket ({{ basket_count }})</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    {% for message in messages %}
+      <div class="message {{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

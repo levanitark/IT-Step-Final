@@ -1,0 +1,64 @@
+{% extends "restaurant/base.html" %}
+
+{% block title %}Basket{% endblock %}
+{% block basket_active %}active{% endblock %}
+
+{% block content %}
+  <h1>Your Basket</h1>
+
+  {% if error %}
+    <p>{{ error }}</p>
+  {% else %}
+    <table class="basket">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Dish</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in items %}
+          <tr>
+            <td><img src="{{ item.product.image }}" alt="{{ item.product.name }}"></td>
+            <td>{{ item.product.name }}</td>
+            <td>
+              <form method="post" action="{% url 'change_quantity' %}" class="qty">
+                {% csrf_token %}
+                <input type="hidden" name="product_id" value="{{ item.product.id }}">
+                <button type="submit" name="action" value="minus">−</button>
+                <span>{{ item.quantity }}</span>
+                <button type="submit" name="action" value="plus">+</button>
+              </form>
+            </td>
+            <td>${{ item.product.price|floatformat:2 }}</td>
+            <td>${{ item.subtotal|floatformat:2 }}</td>
+            <td>
+              <form method="post" action="{% url 'remove_from_basket' %}">
+                {% csrf_token %}
+                <input type="hidden" name="product_id" value="{{ item.product.id }}">
+                <button type="submit" class="btn btn-danger">Remove</button>
+              </form>
+            </td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td colspan="6">Your basket is empty. <a href="{% url 'menu' %}">Go to menu</a></td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <div class="total">Total: <span>${{ total|floatformat:2 }}</span></div>
+
+    {% if items %}
+      <form method="post" action="{% url 'place_order' %}" class="order-form">
+        {% csrf_token %}
+        <button type="submit" class="btn">Place order</button>
+      </form>
+    {% endif %}
+  {% endif %}
+{% endblock %}
