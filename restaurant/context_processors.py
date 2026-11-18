@@ -1,12 +1,8 @@
-import requests
+from django.db.models import Sum
 
-from . import api
+from .models import BasketItem
 
 
 def basket_count(request):
-    # count for the header
-    try:
-        items = api.get_basket()
-    except requests.RequestException:
-        return {"basket_count": 0}
-    return {"basket_count": sum(item["quantity"] for item in items)}
+    count = BasketItem.objects.aggregate(total=Sum("quantity"))["total"]
+    return {"basket_count": count or 0}

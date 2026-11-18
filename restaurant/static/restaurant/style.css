@@ -96,31 +96,6 @@ h1 {
   background: #9e2238;
 }
 
-/* categories */
-.categories {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-
-.category {
-  display: inline-block;
-  padding: 8px 14px;
-  border: 2px solid var(--plum);
-  border-radius: 0;
-  background: var(--white);
-  color: var(--plum);
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.category.active,
-.category:hover {
-  background: var(--plum);
-  color: var(--mustard);
-}
-
 /* filters */
 .filters {
   display: flex;
@@ -236,23 +211,18 @@ h1 {
   font-weight: bold;
 }
 
+.total span {
+  color: var(--tangerine);
+}
+
 .order-form {
   margin-top: 12px;
   text-align: right;
 }
 
-.total span {
-  color: var(--tangerine);
-}
-
-/* messages */
 .message {
   padding: 12px 16px;
   margin-bottom: 16px;
   background: var(--teal);
   color: var(--white);
-}
-
-.message.error {
-  background: var(--danger);
 }

@@ -1,0 +1,409 @@
+[
+  {
+    "model": "restaurant.category",
+    "pk": 1,
+    "fields": {
+      "name": "Salads"
+    }
+  },
+  {
+    "model": "restaurant.category",
+    "pk": 2,
+    "fields": {
+      "name": "Soups"
+    }
+  },
+  {
+    "model": "restaurant.category",
+    "pk": 3,
+    "fields": {
+      "name": "Chicken-Dishes"
+    }
+  },
+  {
+    "model": "restaurant.category",
+    "pk": 4,
+    "fields": {
+      "name": "Beef-Dishes"
+    }
+  },
+  {
+    "model": "restaurant.category",
+    "pk": 5,
+    "fields": {
+      "name": "Seafood-Dishes"
+    }
+  },
+  {
+    "model": "restaurant.category",
+    "pk": 6,
+    "fields": {
+      "name": "Vegetable-Dishes"
+    }
+  },
+  {
+    "model": "restaurant.category",
+    "pk": 7,
+    "fields": {
+      "name": "Bits&Bites"
+    }
+  },
+  {
+    "model": "restaurant.category",
+    "pk": 8,
+    "fields": {
+      "name": "On-The-Side"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Laab kai chicken salad",
+      "price": "10",
+      "spiciness": 2,
+      "nuts": true,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/laab_kai_chicken_salad.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Som tam papaya salad",
+      "price": "9.5",
+      "spiciness": 0,
+      "nuts": false,
+      "vegetarian": true,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/som_tam_papaya_salad.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 3,
+    "fields": {
+      "category": 2,
+      "name": "Tom yam kai",
+      "price": "7",
+      "spiciness": 3,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_yam.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "Tom kha kai",
+      "price": "7",
+      "spiciness": 3,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_kha.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 5,
+    "fields": {
+      "category": 2,
+      "name": "Tom kha koong",
+      "price": "8",
+      "spiciness": 2,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_kha.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "name": "Tom yam koong",
+      "price": "8",
+      "spiciness": 4,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_yam.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "name": "Tom yam vegetarian",
+      "price": "7",
+      "spiciness": 1,
+      "nuts": false,
+      "vegetarian": true,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_yam.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 8,
+    "fields": {
+      "category": 2,
+      "name": "Tom kha vegetarian",
+      "price": "7",
+      "spiciness": 1,
+      "nuts": false,
+      "vegetarian": true,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_kha.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 9,
+    "fields": {
+      "category": 3,
+      "name": "Sweet 'n sour chicken",
+      "price": "14",
+      "spiciness": 2,
+      "nuts": true,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/sweet_n_sour.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 10,
+    "fields": {
+      "category": 3,
+      "name": "Chicken cashew",
+      "price": "14",
+      "spiciness": 1,
+      "nuts": true,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/chicken_cashew.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 11,
+    "fields": {
+      "category": 3,
+      "name": "Kai see ew",
+      "price": "14",
+      "spiciness": 4,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/kai_see_ew.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 12,
+    "fields": {
+      "category": 4,
+      "name": "Beef massaman",
+      "price": "14.5",
+      "spiciness": 2,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/beef_massaman.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 13,
+    "fields": {
+      "category": 5,
+      "name": "Seafood chu chee",
+      "price": "16",
+      "spiciness": 2,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/chu_chee.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 14,
+    "fields": {
+      "category": 5,
+      "name": "Penang shrimp",
+      "price": "16",
+      "spiciness": 4,
+      "nuts": true,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/red_curry.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 15,
+    "fields": {
+      "category": 6,
+      "name": "Green curry veggies",
+      "price": "12.5",
+      "spiciness": 0,
+      "nuts": true,
+      "vegetarian": true,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/green_curry.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 16,
+    "fields": {
+      "category": 6,
+      "name": "Tofu cashew",
+      "price": "12.5",
+      "spiciness": 0,
+      "nuts": true,
+      "vegetarian": true,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/tofu_cashew.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 17,
+    "fields": {
+      "category": 6,
+      "name": "Red curry veggies",
+      "price": "12.5",
+      "spiciness": 4,
+      "nuts": false,
+      "vegetarian": true,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/red_curry_vega.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 18,
+    "fields": {
+      "category": 6,
+      "name": "Krapau tofu",
+      "price": "12.5",
+      "spiciness": 0,
+      "nuts": false,
+      "vegetarian": true,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/krapau_vega.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 19,
+    "fields": {
+      "category": 7,
+      "name": "Prawn crackers",
+      "price": "2.5",
+      "spiciness": 1,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/kroepoek.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 20,
+    "fields": {
+      "category": 7,
+      "name": "Fish cakes",
+      "price": "6.5",
+      "spiciness": 1,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/fish_cakes.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 21,
+    "fields": {
+      "category": 7,
+      "name": "Chicken satay",
+      "price": "6.5",
+      "spiciness": 1,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/sate.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 22,
+    "fields": {
+      "category": 7,
+      "name": "Satay sauce",
+      "price": "1.5",
+      "spiciness": 2,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/satesaus.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 23,
+    "fields": {
+      "category": 7,
+      "name": "Shrimp springrolls",
+      "price": "6.5",
+      "spiciness": 3,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/koong_hom_pha.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 24,
+    "fields": {
+      "category": 7,
+      "name": "Mini vegetarian spring rolls",
+      "price": "6.5",
+      "spiciness": 2,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/mini_vega_springrolls.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 25,
+    "fields": {
+      "category": 7,
+      "name": "Chicken springrolls",
+      "price": "6.5",
+      "spiciness": 2,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/chicken_loempias.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 26,
+    "fields": {
+      "category": 8,
+      "name": "Thai fried rice",
+      "price": "7.5",
+      "spiciness": 2,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/fried_rice.png"
+    }
+  },
+  {
+    "model": "restaurant.product",
+    "pk": 27,
+    "fields": {
+      "category": 8,
+      "name": "Fresh prawn crackers",
+      "price": "2.5",
+      "spiciness": 1,
+      "nuts": false,
+      "vegetarian": false,
+      "image": "https://course-jsbasic.javascript.ru/assets/products/kroepoek.png"
+    }
+  }
+]
