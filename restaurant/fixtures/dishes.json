@@ -65,7 +65,7 @@
       "spiciness": 2,
       "nuts": true,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/laab_kai_chicken_salad.png"
+      "image": "products/laab_kai_chicken_salad.png"
     }
   },
   {
@@ -78,7 +78,7 @@
       "spiciness": 0,
       "nuts": false,
       "vegetarian": true,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/som_tam_papaya_salad.png"
+      "image": "products/som_tam_papaya_salad.png"
     }
   },
   {
@@ -91,7 +91,7 @@
       "spiciness": 3,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_yam.png"
+      "image": "products/tom_yam.png"
     }
   },
   {
@@ -104,7 +104,7 @@
       "spiciness": 3,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_kha.png"
+      "image": "products/tom_kha.png"
     }
   },
   {
@@ -117,7 +117,7 @@
       "spiciness": 2,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_kha.png"
+      "image": "products/tom_kha.png"
     }
   },
   {
@@ -130,7 +130,7 @@
       "spiciness": 4,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_yam.png"
+      "image": "products/tom_yam.png"
     }
   },
   {
@@ -143,7 +143,7 @@
       "spiciness": 1,
       "nuts": false,
       "vegetarian": true,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_yam.png"
+      "image": "products/tom_yam.png"
     }
   },
   {
@@ -156,7 +156,7 @@
       "spiciness": 1,
       "nuts": false,
       "vegetarian": true,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/tom_kha.png"
+      "image": "products/tom_kha.png"
     }
   },
   {
@@ -169,7 +169,7 @@
       "spiciness": 2,
       "nuts": true,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/sweet_n_sour.png"
+      "image": "products/sweet_n_sour.png"
     }
   },
   {
@@ -182,7 +182,7 @@
       "spiciness": 1,
       "nuts": true,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/chicken_cashew.png"
+      "image": "products/chicken_cashew.png"
     }
   },
   {
@@ -195,7 +195,7 @@
       "spiciness": 4,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/kai_see_ew.png"
+      "image": "products/kai_see_ew.png"
     }
   },
   {
@@ -208,7 +208,7 @@
       "spiciness": 2,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/beef_massaman.png"
+      "image": "products/beef_massaman.png"
     }
   },
   {
@@ -221,7 +221,7 @@
       "spiciness": 2,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/chu_chee.png"
+      "image": "products/chu_chee.png"
     }
   },
   {
@@ -234,7 +234,7 @@
       "spiciness": 4,
       "nuts": true,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/red_curry.png"
+      "image": "products/red_curry.png"
     }
   },
   {
@@ -247,7 +247,7 @@
       "spiciness": 0,
       "nuts": true,
       "vegetarian": true,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/green_curry.png"
+      "image": "products/green_curry.png"
     }
   },
   {
@@ -260,7 +260,7 @@
       "spiciness": 0,
       "nuts": true,
       "vegetarian": true,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/tofu_cashew.png"
+      "image": "products/tofu_cashew.png"
     }
   },
   {
@@ -273,7 +273,7 @@
       "spiciness": 4,
       "nuts": false,
       "vegetarian": true,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/red_curry_vega.png"
+      "image": "products/red_curry_vega.png"
     }
   },
   {
@@ -286,7 +286,7 @@
       "spiciness": 0,
       "nuts": false,
       "vegetarian": true,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/krapau_vega.png"
+      "image": "products/krapau_vega.png"
     }
   },
   {
@@ -299,7 +299,7 @@
       "spiciness": 1,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/kroepoek.png"
+      "image": "products/kroepoek.png"
     }
   },
   {
@@ -312,7 +312,7 @@
       "spiciness": 1,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/fish_cakes.png"
+      "image": "products/fish_cakes.png"
     }
   },
   {
@@ -325,7 +325,7 @@
       "spiciness": 1,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/sate.png"
+      "image": "products/sate.png"
     }
   },
   {
@@ -338,7 +338,7 @@
       "spiciness": 2,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/satesaus.png"
+      "image": "products/satesaus.png"
     }
   },
   {
@@ -351,7 +351,7 @@
       "spiciness": 3,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/koong_hom_pha.png"
+      "image": "products/koong_hom_pha.png"
     }
   },
   {
@@ -364,7 +364,7 @@
       "spiciness": 2,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/mini_vega_springrolls.png"
+      "image": "products/mini_vega_springrolls.png"
     }
   },
   {
@@ -377,7 +377,7 @@
       "spiciness": 2,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/chicken_loempias.png"
+      "image": "products/chicken_loempias.png"
     }
   },
   {
@@ -390,7 +390,7 @@
       "spiciness": 2,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/fried_rice.png"
+      "image": "products/fried_rice.png"
     }
   },
   {
@@ -403,7 +403,7 @@
       "spiciness": 1,
       "nuts": false,
       "vegetarian": false,
-      "image": "https://course-jsbasic.javascript.ru/assets/products/kroepoek.png"
+      "image": "products/kroepoek.png"
     }
   }
 ]

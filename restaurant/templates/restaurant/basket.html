@@ -20,7 +20,7 @@
     <tbody>
       {% for item in items %}
         <tr>
-          <td><img src="{{ item.product.image }}" alt="{{ item.product.name }}"></td>
+          <td><img src="{{ item.product.image.url }}" alt="{{ item.product.name }}"></td>
           <td>{{ item.product.name }}</td>
           <td>
             <form method="post" action="{% url 'update_basket' item.id %}" class="qty">

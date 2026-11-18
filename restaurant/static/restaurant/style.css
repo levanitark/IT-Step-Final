@@ -54,8 +54,26 @@ h1 {
   color: var(--mustard);
 }
 
-.header nav a {
-  margin-left: 20px;
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.username {
+  color: var(--mustard);
+}
+
+.logout-form button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.logout-form button:hover {
+  color: var(--mustard);
 }
 
 .header nav a.active,
@@ -225,4 +243,36 @@ h1 {
   margin-bottom: 16px;
   background: var(--teal);
   color: var(--white);
+}
+
+/* login and register */
+.auth-form {
+  max-width: 420px;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.auth-form p {
+  margin-bottom: 12px;
+}
+
+.auth-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 8px;
+}
+
+.auth-form .helptext,
+.auth-form ul {
+  font-size: 13px;
+  color: #777;
+}
+
+.auth-form .errorlist {
+  color: var(--danger);
 }

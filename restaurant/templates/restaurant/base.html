@@ -12,7 +12,17 @@
     <a href="{% url 'menu' %}" class="logo">Step Ordering</a>
     <nav>
       <a href="{% url 'menu' %}" class="{% block menu_active %}{% endblock %}">Menu</a>
-      <a href="{% url 'basket' %}" class="{% block basket_active %}{% endblock %}">Basket ({{ basket_count }})</a>
+      {% if user.is_authenticated %}
+        <a href="{% url 'basket' %}" class="{% block basket_active %}{% endblock %}">Basket ({{ basket_count }})</a>
+        <span class="username">{{ user.username }}</span>
+        <form method="post" action="{% url 'logout' %}" class="logout-form">
+          {% csrf_token %}
+          <button type="submit">Log out</button>
+        </form>
+      {% else %}
+        <a href="{% url 'login' %}">Log in</a>
+        <a href="{% url 'register' %}">Register</a>
+      {% endif %}
     </nav>
   </header>
 

@@ -44,7 +44,7 @@
   <div class="products">
     {% for product in products %}
       <div class="card">
-        <img src="{{ product.image }}" alt="{{ product.name }}">
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
         <div class="card-body">
           <h3>{{ product.name }}</h3>
           <p>Spiciness: {% if product.spiciness %}{{ product.chilis }}{% else %}Not spicy{% endif %}</p>
@@ -52,10 +52,14 @@
           <p>Vegetarian: {{ product.vegetarian|yesno:"Yes,No" }}</p>
           <div class="card-footer">
             <span class="price">${{ product.price }}</span>
-            <form method="post" action="{% url 'add_to_basket' product.id %}">
-              {% csrf_token %}
-              <button type="submit" class="btn">Add to basket</button>
-            </form>
+            {% if user.is_authenticated %}
+              <form method="post" action="{% url 'add_to_basket' product.id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn">Add to basket</button>
+              </form>
+            {% else %}
+              <a href="{% url 'login' %}" class="btn">Log in to order</a>
+            {% endif %}
           </div>
         </div>
       </div>

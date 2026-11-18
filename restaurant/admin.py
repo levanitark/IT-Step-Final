@@ -14,5 +14,5 @@ class OrderItemInline(admin.TabularInline):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ["__str__", "created_at", "total"]
+    list_display = ["__str__", "user", "created_at", "total"]
     inlines = [OrderItemInline]

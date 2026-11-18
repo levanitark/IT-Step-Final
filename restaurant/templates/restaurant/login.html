@@ -1,0 +1,14 @@
+{% extends "restaurant/base.html" %}
+
+{% block title %}Log in{% endblock %}
+
+{% block content %}
+  <h1>Log in</h1>
+
+  <form method="post" class="auth-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn">Log in</button>
+    <p>No account? <a href="{% url 'register' %}">Register</a></p>
+  </form>
+{% endblock %}
